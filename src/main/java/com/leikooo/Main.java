@@ -1,21 +1,21 @@
 package com.leikooo;
 
+import com.leikooo.util.MathUtils;
+import com.leikooo.util.StringUtils;
+
 /**
  *@author <a href="https://github.com/lieeew">leikooo</a>
  *@date 2026/6/8
- *@description
- */  //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+ *@description Git rebase 练习项目入口
+ */
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        String greeting = StringUtils.capitalize("hello and welcome!");
+        System.out.println(greeting);
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        int[] numbers = {1, 2, 3, 4, 5};
+        System.out.println("sum = " + MathUtils.sum(numbers));
+        System.out.println("average = " + MathUtils.average(numbers));
+        System.out.println("max = " + MathUtils.max(numbers));
     }
 }
