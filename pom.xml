@@ -7,6 +7,8 @@
     <groupId>com.leikooo</groupId>
     <artifactId>exercise</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <name>git-exercise</name>
+    <description>用于练习 Git rebase 操作的示例项目 git rebase --continue </description>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
